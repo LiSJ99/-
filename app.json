@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/graph/graph",
+    "pages/my/my",
+    "pages/normal/normal",
+    "pages/fault/fault",
+    "pages/history/history",
+    "pages/detail/detail"
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#869DAB",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#3D313F",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json"
+}

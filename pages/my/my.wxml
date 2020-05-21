@@ -1,0 +1,28 @@
+<!-- 登陆页面 -->
+<view class="myLogin">
+  <block wx:if="{{isLogin}}">
+    <image src="{{src}}"></image>
+    <text>{{nickName}}</text>
+  </block>
+  <button wx:else open-type="getUserInfo" bindgetuserinfo="getMyInfo">未登录，点此登录</button>
+</view>
+
+<view class="container">
+  <view class="bearing panel">
+     <view class="data">
+        <text>公司：xxx</text>
+     </view>
+     <view class="data">
+        <text>轴承总数：{{num}}</text>
+     </view>
+     <view class="data">
+        <text>正常轴承数：{{num_normal}}</text>
+    </view> 
+    <view class="data">
+        <text>故障轴承数：{{num_fault}}</text>
+    </view> 
+    <view class="favourite" bindtap="gotofavourite">
+        <text>我的收藏</text>
+    </view> 
+  </view>
+</view>

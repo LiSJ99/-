@@ -1,0 +1,53 @@
+<view class="container">
+<view class="body">
+  <view class="head">
+    <text class="title">{{bearing.name}}</text>
+    <!-- <view class="history">
+      <button plain="true" bindtap = 'goToDetail'>历史数据</button>
+    </view> -->
+  </view>
+  <view class="photo">
+     <image src='{{bearing.image}}' class="bearing"></image>
+     <view class="status">
+       <text style="color: {{bearing.color}}">{{bearing.status}}</text>
+     </view>
+  </view>
+
+  <view class="divLine"></view>
+  <view class="data">
+    <text>DE_time:{{de_time}}</text>
+    <!-- <view class="history">
+       <button plain="true" bindtap = 'goToDetail'>历史数据</button>
+    </view> -->
+  </view>
+
+  <view class="divLine"></view>
+  <view class="data">
+    <text>FE_time:{{fe_time}}</text>
+    <!-- <view class="history">
+     <button plain="true" bindtap = 'goToDetail'>历史数据</button>
+  </view> -->
+  </view> 
+
+  <view class="divLine"></view>
+  <view class="data">
+    <text>BA_time:{{ba_time}}</text>
+    <!-- <view class="history">
+      <button plain="true" bindtap = 'goToDetail'>历史数据</button>
+    </view> -->
+  </view> 
+  <view class="divLine"></view>
+
+  <view class="information">
+    <text>诊断时间：{{time}}</text>
+    <text>设备编号：{{bearing.num}}</text>
+    <text>设备模型：random forest</text>
+    <text>设备状态：运行中</text>
+    <text>运维人员：xxx</text>
+  </view>
+
+  <button wx:if = '{{isAdd}}' plain bindtap="cancelFavorites">❤️已收藏</button>
+  <button wx:else plain bindtap = "addFavorites">❤️未收藏</button>
+
+</view>
+</view>

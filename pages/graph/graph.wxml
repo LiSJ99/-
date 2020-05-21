@@ -1,0 +1,14 @@
+<view class='container'>
+  <view class='body'>
+      <view class="row">
+         <image src="{{bearings[0].color}}.jpg" class="bearing" bindtap = 'goToDetail1' data-id='1'></image>
+         <image src="{{bearings[1].color}}.jpg" class="bearing" bindtap = 'goToDetail2' data-id='2'></image>
+         <image src="{{bearings[2].color}}.jpg" class="bearing" bindtap = 'goToDetail3' data-id='3'></image>
+      </view>
+      <view class="row">
+         <image src="{{bearings[3].color}}.jpg" class="bearing" bindtap = 'goToDetail4' data-id='4'></image>
+         <image src="{{bearings[4].color}}.jpg" class="bearing" bindtap = 'goToDetail5' data-id='5'></image>
+         <image src="{{bearings[5].color}}.jpg" class="bearing" bindtap = 'goToDetail6' data-id='6'></image>
+      </view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<view class='container'>
+  <view class='picture'>
+     <image src="/images/轴承.png" style="width:100%"></image>
+  </view>
+  <view class='body'>
+	 	 <button bindtap="goToList" class="clear_btn1" size="mini" >轴承列表</button>
+     <button bindtap="goToGraph" class="clear_btn2" size="mini" >设配平面图</button>
+     <button bindtap="goToMy" class="clear_btn3" size="mini" >个人中心</button>
+  </view>
+</view>
